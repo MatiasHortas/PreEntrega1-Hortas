@@ -1,6 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons"
-import  "./cartwidget.css";
+import  "./style.css";
 
 const CartWidget =()=>{
     const carrito = 2;
