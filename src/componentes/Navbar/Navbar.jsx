@@ -12,9 +12,9 @@ const NavBar = () => {
         <CartWidget />
 
         <div className="navbar__container-gral ">
-          <Link to='/home' className="navbar__titulo" >The Citadel</Link>
+          <Link to='/' className="navbar__titulo" >The Citadel</Link>
           <div className="navbar__container--secciones">
-            <Link to="/human/" className="navbar__seccion">Humano</Link>
+            <Link to="/humano" className="navbar__seccion">Humano</Link>
             <Link to="/alien" className="navbar__seccion">Alien</Link>
           </div>
         </div>

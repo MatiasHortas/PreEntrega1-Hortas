@@ -1,14 +1,11 @@
-import React, { useState } from "react";
-import ItemListContainer from "./index";
+import React from "react";
 
-
-const ItemDetail  =()=>{
-const [itemFiltro, setFiltro]  = useState([ItemListContainer])
-
-    return (
-
-        
+const ItemDetails = () => {
+  return (
+    <div >
+      
+    </div>
     
-    )
-}
-export default ItemDetail;
+  );
+};
+export default ItemDetails;
