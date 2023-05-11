@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import "./style.css";
 import Item from "./item";
+import { Link} from "react-router-dom";
+
 
 const ItemListContainer = ({greeting}) => {
     const [itemList, setRickMorty] = useState([]);
@@ -9,7 +11,7 @@ const ItemListContainer = ({greeting}) => {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('https://rickandmortyapi.com/api/character/');
+                const response = await fetch('https://rickandmortyapi.com/api/character/' );
                 if (!response.ok) {
                     throw new Error('Ningun producto encontrado');
                 }
@@ -31,7 +33,9 @@ const ItemListContainer = ({greeting}) => {
             </div>
             <div className="container__img">
             {itemList.map((item) =>{
-                return <Item key={item.id} name={item.name} image={item.image} id={item.id} species={item.species}/>
+
+            return   <Link to={'/item'}> <Item key={item.id} name={item.name} image={item.image} id={item.id} species={item.species}/> 
+            </Link>
                     
             })}
             </div>
