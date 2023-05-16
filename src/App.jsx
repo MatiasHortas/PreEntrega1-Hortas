@@ -1,31 +1,35 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./componentes/Navbar/Index";
+import NavBar from "./componentes/Navbar/";
 import ItemListContainer from "./componentes/itemListContainer";
-import ItemDetails from "./componentes/itemListContainer/itemDetail";
+import ItemDetalle from "./componentes/itemListContainer/itemDetail";
+import caterogyMock from "./componentes/itemListContainer/speciesNav.json";
+// import NextPage from "./componentes/nextPage";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <header className="app__header">
         <BrowserRouter>
-        <NavBar />
-            <Routes>
-              <Route path="/alien" />
-              <Route path="/humano" />
-              <Route path="/item" element={<ItemListContainer />} />
-              <Route path="/item/:id" element={<ItemDetails />} />
-            </Routes>
-          
+          <NavBar category={caterogyMock.category} />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route
+              path="/category/:categoryId"
+              element={<ItemListContainer />}
+            />
+            {/* <Route path="/Human" /> */}
+            <Route path="/items" element={<ItemListContainer />} />
+            <Route path="/item/:id" element={<ItemDetalle />} />
+            <Route path="*" element={<h1>404 NOT FOUND</h1>} />
+          </Routes>
+          {/* <NextPage /> */}
         </BrowserRouter>
-        <button className="app__button app__button--disabled" disabled></button>
       </header>
-      <body className="app__body">
-        <ItemListContainer greeting="Tienda de cartas" />
-      </body>
+      <body className="app__body"></body>
 
       <footer></footer>
     </div>
   );
-}
+};
 
 export default App;
