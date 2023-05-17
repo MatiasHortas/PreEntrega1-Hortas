@@ -1,37 +1,25 @@
 .App {
   text-align: center;
-
-
 }
 
-.app{
-
+.app {
   font-size: 30px;
 
-  &__header{
+  &__header {
     font-size: 330px;
-
-    
   }
 
-  &__button{
-      color: red;
-      padding: 10px;
-    
-    &--disabled{
+  &__button {
+    color: red;
+    padding: 10px;
+
+    &--disabled {
       color: black;
-    
     }
-  
-    }
-    
-    
-    \
+  }
 
-    
-
-  &__body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  \ &__body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
 .App-logo {

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import CartWidget from "../cartWidget";
-import "./navbar.css";
+import "./style.css";
 
 import("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 

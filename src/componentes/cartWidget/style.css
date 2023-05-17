@@ -1,21 +1,23 @@
 .cart-widget__num {
-    color: rgb(231, 19, 19);
-    position: absolute;
-    right: 49px;
-    margin-top: 33px;
-    z-index: 2;
-    font-size: 12px;
-    font-weight: bold;
+  color: rgb(243, 237, 237);
+  position: absolute;
+  right: 39px;
+  margin-top: 14px;
+  z-index: 2;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  background-color: red;
+  border-radius: 50%;
+  padding: 0.1rem 0.5rem;
 }
 
 .cart-widget__icono {
-    color: rgb(255, 255, 255);
-    font-size: 1.3rem;
-    float: right;
-    display: flex;
-    margin-top: 34px;
-    margin-right: 40px;
-    cursor: pointer;
-    
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  float: right;
+  display: flex;
+  margin-top: 34px;
+  margin-right: 40px;
+  cursor: pointer;
 }
-

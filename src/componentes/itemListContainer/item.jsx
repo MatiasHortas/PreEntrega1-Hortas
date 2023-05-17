@@ -6,7 +6,6 @@ export const Item = (item) => {
       <div className="container__imagen">
         <div className="container__item--numero">
           <h1 className="item__titulo">{item.name}</h1>
-          <p className="item__numero">{item.id}</p>
         </div>
         <img className="item__img" src={item.image} alt="imagen" srcset="" />
       </div>
