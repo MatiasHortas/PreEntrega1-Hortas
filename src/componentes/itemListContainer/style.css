@@ -11,6 +11,7 @@ body {
 }
 
 .container__img {
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 5rem;
@@ -18,6 +19,17 @@ body {
   margin-right: 3.2rem;
   text-align: center;
   cursor: pointer;
+=======
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-row-gap: 5rem;
+    margin-bottom: 2rem;
+    margin-right: 3.2rem;
+    text-align: center;
+    margin-top: 5rem;
+    cursor: pointer;
+    
+>>>>>>> c2db53913e9dd82890bd52f8a44207d92c0bfdba
 }
 
 .container__imagen {
